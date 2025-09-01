@@ -1,4 +1,4 @@
-int speed=35;
+int speed=15;
 int x=25;
 boolean moveRight=true;
 boolean moveUp=true;
