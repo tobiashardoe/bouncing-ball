@@ -1,11 +1,11 @@
-int speed=2;
-int x=0;
+int speed=35;
+int x=25;
 boolean moveRight=true;
 boolean moveUp=true;
-int y=0;
+int y=25;
 
 void setup(){
-size(500,500);
+size(600,250);
 
 
 }
@@ -14,7 +14,7 @@ void draw(){
 
 background(255);
 fill(0);
-ellipse(x,height/2,50,50);
+ellipse(x,y,50,50);
 if (moveRight == true) {
  // flytter til højre (speed er  2)
   x=x+speed;
@@ -30,13 +30,20 @@ y=y-speed;
 if (moveRight == false) {
 x=x-speed;
 }
- if (x >= 500-25) {
+ if (x >= width-25) {
  moveRight= false;
  x=x-speed;
  }
  if (x<=0+25) {
  moveRight= true;
  
+ }
+ if (y>=height-20) {
+ moveUp=false;
+ y=y-speed;
+ }
+ if (y<=0+25){
+ moveUp=true;
  }
 
 }
