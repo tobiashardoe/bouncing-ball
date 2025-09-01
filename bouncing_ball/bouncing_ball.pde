@@ -48,7 +48,7 @@ x=x-speed;
 
 }
 
-void keyPressed(){
+/*void keyPressed(){
 println(key);
 
 
@@ -68,5 +68,5 @@ moveRight=false;
  }
 // hvis key er A sæt moveRight til false
 // hvis key er D sæt moveRight til true
-
 }
+*/
