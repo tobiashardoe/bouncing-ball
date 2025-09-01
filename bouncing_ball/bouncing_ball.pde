@@ -14,7 +14,7 @@ void draw(){
 
 background(255);
 fill(0);
-ellipse(x,y,50,50);
+ellipse(x,height/2,50,50);
 if (moveRight == true) {
  // flytter til højre (speed er  2)
   x=x+speed;
@@ -29,8 +29,15 @@ y=y-speed;
   // x=x-speed;
 if (moveRight == false) {
 x=x-speed;
-
 }
+ if (x >= 500-25) {
+ moveRight= false;
+ x=x-speed;
+ }
+ if (x<=0+25) {
+ moveRight= true;
+ 
+ }
 
 }
 
